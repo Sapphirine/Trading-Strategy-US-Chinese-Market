@@ -1,0 +1,3 @@
+
+For running, file named as "dqn*" is the main code; "env*" is the trading environment; 
+"builder*" is the neural network builder part.
