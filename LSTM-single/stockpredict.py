@@ -82,14 +82,12 @@ model = load_model('./model/lstm_1.h5')
 
 
 def predict(model, data, Z, Y):
-    #Predict sequence of 50 steps before shifting prediction run forward by 50 steps
     predicted_seqs = []
     predicted_prices = []
     truth = []
     pdv = []
     tv = []
     for i in range(len(data)):
-        #item = np.array(data[i]).reshape((1,20,3))
         onepredict = model.predict(np.array(data[i])[np.newaxis,:,:])[0,0]
         predicted_prices.append((onepredict+1)*Z[i])
         pdv.append((onepredict+1)*Z[i][0])
@@ -128,7 +126,7 @@ plt.ylabel('Next day price')
 plt.xlabel('days')
 plt.legend()
 
-# plt.savefig('test_f5.png')
+# plt.savefig('test.png')
 plt.show()
 
 
