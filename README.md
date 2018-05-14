@@ -6,7 +6,7 @@ Zijun Nie (zn2146)
    
 There are two parts of the project: the first part is the causal analysis procedure; the second part is the three strategies including LSTM based single trading, DQN based single trading; and actor critic based pair trading. 
 
-Apart from these four folders, the dataset folder would contain stock price data of US and Chinese markets in various sectors. For both markets, Electonic and Information, Finance, Energy and household sectors are selected and there are approaximately 10 stocks in each sector. And In four main folders, there are also some related datasets, which majorly contain information of US and Chinese markets' general stock index price. 
+Apart from these four folders, the dataset folder would contain stock price data of US and Chinese markets in various sectors. For both markets, Electonic and Information, Finance, Energy and Household sectors are selected and there are approaximately 10 stocks in each sector. And In four main folders, there are also some related datasets, which majorly contain information of US and Chinese markets' general stock index price. 
 
 To run the causal analysis,
 
